@@ -107,6 +107,11 @@ function App() {
             <Infobox displayInfo={displayInfo} />
           </section>
         </div>
+        <footer>
+          <a href="https://github.com/sjaga003/AirQualityVisualizer">
+            View on Github
+          </a>
+        </footer>
       </main>
     </div>
   );
