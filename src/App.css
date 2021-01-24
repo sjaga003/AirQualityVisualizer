@@ -1,38 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 .App {
+  background-size: cover;
+  background-image: url('./Background_Fire.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-backdrop {
+  margin: auto;
+  width: 69.8rem;
+  height: 85vh;
+  background: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.wheel-diagram {
+  margin: 0 auto 0 auto;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  z-index: auto;
+  /* background-color: yellow; */
+}
+
+.wheel-image {
+  align-self: flex-start;
+  max-width: 100%;
+  height: auto;
+  padding: 5vh 4vw 0vh 4vw;
+  margin: 0 auto;
+}
+
+.pointer {
+  position: absolute;
+  height: auto;
+  padding: 5vh 4vw 0vh 4vw;
+  align-self: flex-start;
+  transform-origin: 50% 55%;
+}
+
+.aqi-number {
+  position: absolute;
+  font-size: 4.8rem;
+  padding: 24.6vh 0vw 0vh 0vw;
+  max-width: 50%;
+  min-width: 0;
+}
+
+.aqi-message {
+  /* background-color: red; */
+}
+
+.search-box {
+  margin: 4vh auto 0 auto;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.search-box form {
+  align-self: flex-start;
+  align-content: center;
+  z-index: 4;
+  background: #cfcfcf;
+  border-radius: 18px 18px 18px 18px;
+}
+
+.form-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0;
+  width: 44.6rem;
+  font-size: 1.8rem;
+  background: #cfcfcf;
+  border-radius: 18px 0px 0px 18px;
+  padding: 0rem 0 0 1.6rem;
+  font-family: 'Quicksand', sans-serif;
+  vertical-align: super;
+}
+
+.form-submit {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0;
+  background: #cfcfcf;
+  color: #636363;
+  border-radius: 0px 18px 18px 0px;
+  padding: 0.8rem;
+  margin: 0 auto;
+}
+
+.form-submit:hover {
+  background: #636363;
+  color: #cfcfcf;
+  cursor: pointer;
+}
+
+.form-submit i {
+  color: inherit;
+}
+
+.info-box {
+  margin: 4vh auto 0 auto;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pol-name {
+  font-size: 3.5rem;
+}
+
+.aqi-description {
+  padding: 3.1rem 11rem 0 11rem;
+  font-size: 2.4rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reporting-area {
+  padding: 5.2rem 0 0 0;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dropdown {
+  font-size: 2.4rem;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  margin: auto;
+  border: 0.5px solid #636363;
+  padding: 0.3rem;
+  width: 48.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dropdown-item {
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown:empty {
+  border: none;
 }
