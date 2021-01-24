@@ -11,7 +11,7 @@ function App() {
   const fetchFromApi = async (lat, lng) => {
     const data = await fetch(
       'https://cors-anywhere.herokuapp.com/' +
-        `http://www.airnowapi.org/aq/forecast/latLong/?format=application/json&latitude=${lat}&longitude=${lng}&distance=25&API_KEY=30D23A57-056B-488F-A5AF-CC73966C1CD4`
+        `http://www.airnowapi.org/aq/forecast/latLong/?format=application/json&latitude=${lat}&longitude=${lng}&distance=25&API_KEY=${process.env.REACT_APP_WEATHER_KEY}`
     );
     const jsonData = await data.json();
     return jsonData;
