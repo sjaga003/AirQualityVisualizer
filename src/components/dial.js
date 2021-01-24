@@ -23,7 +23,7 @@ const Dial = ({ dialRotation, displayInfo }) => {
   };
 
   const categoryStyle = {
-    color: displayInfo.category === 'Invalid Address' ? 'red' : 'black',
+    color: displayInfo.category === 'No AQI Data Found' ? 'red' : 'black',
     fontSize: categoryFontSizeHandler(),
     position: `absolute`,
     padding: `33vh 0vw 0vh 0vw`,

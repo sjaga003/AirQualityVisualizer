@@ -54,7 +54,7 @@ function App() {
       })
       .catch((error) => {
         console.log(error);
-        maxCategory = 'Invalid Address';
+        maxCategory = 'No AQI Data Found';
         maxVal = 0;
         const displayInfo = {
           number: maxVal,
